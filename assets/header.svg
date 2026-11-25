@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="260" viewBox="0 0 900 260" role="img" aria-label="KENCHANA MAN - neon profile header">
+  <defs>
+    <linearGradient id="neon" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00f0ff"/>
+      <stop offset="50%" stop-color="#7a5cff"/>
+      <stop offset="100%" stop-color="#ff2bd6"/>
+    </linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#050816"/>
+      <stop offset="100%" stop-color="#120a2a"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00f0ff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00f0ff" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#00f0ff" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#7a5cff" stroke-opacity="0.18" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-50%" width="140%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="typeclip">
+      <rect x="60" y="150" height="40" width="0">
+        <animate attributeName="width" values="0;700;700;0;0" keyTimes="0;0.4;0.8;0.9;1" dur="9s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+    <clipPath id="round"><rect width="900" height="260" rx="18"/></clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'SF Mono','Menlo','Consolas','Courier New',monospace; }
+    .title { font-size: 64px; font-weight: 800; letter-spacing: 6px; animation: flicker 6s infinite; }
+    .sub { font-size: 14px; letter-spacing: 4px; fill: #7ee8ff; }
+    .tag { font-size: 20px; fill: #e8f6ff; }
+    .tiny { font-size: 12px; fill: #8a7dff; }
+    @keyframes flicker {
+      0%,18%,22%,62%,64%,100% { opacity: 1; }
+      20%,63% { opacity: 0.55; }
+    }
+    @keyframes pulse { 0%,100% { opacity: .35; } 50% { opacity: 1; } }
+    .dot { animation: pulse 2s infinite; }
+    .dot2 { animation: pulse 2s infinite .6s; }
+    .dot3 { animation: pulse 2s infinite 1.2s; }
+  </style>
+
+  <g clip-path="url(#round)">
+    <rect width="900" height="260" fill="url(#bg)"/>
+    <rect width="900" height="260" fill="url(#grid)"/>
+
+    <!-- moving scan band -->
+    <rect x="0" y="-80" width="900" height="80" fill="url(#scan)">
+      <animate attributeName="y" values="-80;260" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- corner brackets -->
+    <g fill="none" stroke="url(#neon)" stroke-width="3" filter="url(#glow)">
+      <path d="M20 50V20H50"/>
+      <path d="M880 50V20H850"/>
+      <path d="M20 210V240H50"/>
+      <path d="M880 210V240H850"/>
+    </g>
+
+    <!-- window dots -->
+    <circle class="dot" cx="64" cy="38" r="5" fill="#ff2bd6"/>
+    <circle class="dot2" cx="84" cy="38" r="5" fill="#7a5cff"/>
+    <circle class="dot3" cx="104" cy="38" r="5" fill="#00f0ff"/>
+    <text class="mono tiny" x="840" y="42" text-anchor="end">~/kenchana/profile.sh</text>
+
+    <!-- title -->
+    <text class="mono sub" x="62" y="82">&gt; HELLO, WORLD. I AM</text>
+    <text class="mono title" x="58" y="140" fill="url(#neon)" filter="url(#glow)">KENCHANA MAN</text>
+
+    <!-- typing tagline -->
+    <g clip-path="url(#typeclip)">
+      <text class="mono tag" x="62" y="178">$ building things / making videos / bridging JP &#8644; KR</text>
+    </g>
+    <rect x="62" y="160" width="11" height="22" fill="#00f0ff" filter="url(#glow)">
+      <animate attributeName="x" values="62;762;762;62;62" keyTimes="0;0.4;0.8;0.9;1" dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1" dur="0.9s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- bottom neon line -->
+    <rect x="60" y="214" width="780" height="3" rx="1.5" fill="url(#neon)" filter="url(#glow)"/>
+    <circle r="6" cy="215.5" fill="#ffffff" filter="url(#glow)">
+      <animate attributeName="cx" values="60;840;60" dur="5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>
