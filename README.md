@@ -22,7 +22,7 @@
 
 ## ⚡ About
 
-- 🌏 Bilingual (日本語 / 한국어), based in Shizuoka, Japan
+- 🌏 Bilingual (日本語 / 한국어), based in Japan
 - 🎓 Engineering 
 - 🎬 I run the YouTube channel **Kenchanaman**
 
@@ -32,8 +32,6 @@
 <div align="center">
 
 ![Python](https://img.shields.io/badge/Python-0a0e27?style=for-the-badge&logo=python&logoColor=00f0ff)
-![JavaScript](https://img.shields.io/badge/JavaScript-0a0e27?style=for-the-badge&logo=javascript&logoColor=ff2bd6)
-![Git](https://img.shields.io/badge/Git-0a0e27?style=for-the-badge&logo=git&logoColor=7a5cff)
 ![GitHub](https://img.shields.io/badge/GitHub-0a0e27?style=for-the-badge&logo=github&logoColor=ffffff)
 
 </div>
