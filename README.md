@@ -22,8 +22,8 @@
 
 ## ⚡ About
 
-- 🌏 Bilingual (日本語 / 한국어), based in Gotemba, Shizuoka, Japan
-- 🎓 Engineering background, always learning new tech
+- 🌏 Bilingual (日本語 / 한국어), based in Shizuoka, Japan
+- 🎓 Engineering 
 - 🎬 I run the YouTube channel **Kenchanaman**
 
 ## 🛠 Tech Stack
