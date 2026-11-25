@@ -42,8 +42,8 @@
 
 <div align="center">
 
-<img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=YOUR_GITHUB_USERNAME&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00f0ff&icon_color=ff2bd6&text_color=c9d1d9"/>
-<img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_GITHUB_USERNAME&layout=compact&hide_border=true&bg_color=0d1117&title_color=00f0ff&text_color=c9d1d9"/>
+<img height="170" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=yeuhosu&show_icons=true&hide_border=true&bg_color=0d1117&title_color=00f0ff&icon_color=ff2bd6&text_color=c9d1d9"/>
+<img height="170" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ysuhosu&layout=compact&hide_border=true&bg_color=0d1117&title_color=00f0ff&text_color=c9d1d9"/>
 
 </div>
 
